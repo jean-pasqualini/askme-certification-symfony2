@@ -1,0 +1,110 @@
+category: Forms
+questions:
+    -
+        question: 'Inside a form type, how to add a "date" field type in an input field?'
+        answers:
+            - {value: Add an option 'render' => 'input',       correct: false}
+            - {value: Add an option 'widget' => 'text',        correct: false}
+            - {value: Add an option 'widget' => 'single_text', correct: true}
+            - {value: Add an option 'widget' => 'input',       correct: false}
+    -
+        question: 'Which method allows you to handle the request on a form instance?'
+        answers:
+            - {value: $form->bindRequest($request),   correct: false}
+            - {value: $form->handleRequest($request), correct: true}
+            - {value: $form->handle($request),        correct: false}
+            - {value: $form->request($request),       correct: false}
+    -
+        question: 'From a Form instance, which method can you call to obtain a FormView instance?'
+        answers:
+            - {value: $form->getView(),    correct: false}
+            - {value: $form->renderView(), correct: false}
+            - {value: $form->view(),       correct: false}
+            - {value: $form->createView(), correct: true}
+    -
+        question: 'In a Twig template, which function render a form field?'
+        answers:
+            - {value: "{{ form_item(form.field) }}",   correct: false}
+            - {value: "{{ form_render(form.field) }}", correct: false}
+            - {value: "{{ form_widget(form.field) }}", correct: true}
+            - {value: "{{ form_view(form.field) }}",   correct: false}
+    -
+        question: 'Using Form factory, how to define a CSRF provider?'
+        answers:
+            - {value: $formFactory->addExtension(new CsrfExtension($csrfProvider));,     correct: true}
+            - {value: $formFactory->setExtension(new CsrfExtension($csrfProvider));,     correct: false}
+            - {value: $formFactory->addCsrfExtension(new CsrfExtension($csrfProvider));, correct: false}
+            - {value: $formFactory->addExtension(new Csrf($csrfProvider));,              correct: false}
+    -
+        question: 'Using Form component, which option can you use into setDefaultOptions() method to define CSRF field name?'
+        answers:
+            - {value: csrf_field_name, correct: true}
+            - {value: csrf_fieldname,  correct: false}
+            - {value: csrf_field,      correct: false}
+            - {value: csrf_name,       correct: false}
+    -
+        question: 'Using Form component, option csrf_error_message can be use in setDefaultOptions() to define a custom CSRF error message?'
+        answers:
+            - {value: Yes, correct: false}
+            - {value: No,  correct: true}
+    -
+        question: 'Using Form component, which option will allow you to specify groups used for validation?'
+        answers:
+            - {value: validation_groups, correct: true}
+            - {value: groups_validation, correct: false}
+            - {value: validator_groups,  correct: false}
+            - {value: groups_validator,  correct: false}
+    -
+        question: 'Which form event exist?'
+        answers:
+            - {value: "FormEvents::PRE_SET_DATA",   correct: true}
+            - {value: "FormEvents::SUBMIT",         correct: true}
+            - {value: "FormEvents::POST_SET_DATA",  correct: true}
+            - {value: "FormEvents::POST_REQUEST",   correct: false}
+    -
+        question: 'What data is inside FormEvent object at FormEvents::PRE_SET_DATA?'
+        answers:
+            - {value: "Model data",      correct: true}
+            - {value: "Normalized data", correct: false}
+            - {value: "Request data",    correct: false}
+            - {value: "View data",       correct: false}
+    -
+        question: 'What data is inside FormEvent object at FormEvents::PRE_SUBMIT?'
+        answers:
+            - {value: "Model data",      correct: false}
+            - {value: "Normalized data", correct: false}
+            - {value: "Request data",    correct: true}
+            - {value: "View data",       correct: false}
+    -
+        question: 'Which ones of these types extends from TextType?'
+        answers:
+            - {value: "money",    correct: true}
+            - {value: "currency", correct: true}
+            - {value: "textarea", correct: true}
+            - {value: "surname",  correct: false}
+    -
+        question: 'Which date type exist?'
+        answers:
+            - {value: "date",       correct: true}
+            - {value: "datetime",   correct: true}
+            - {value: "time",       correct: true}
+            - {value: "timestamp",  correct: false}
+    -
+        question: 'How do you bind a constraint to a form field?'
+        answers:
+            - {value: "Using option 'constraints' in $formBuilder->add()",          correct: true}
+            - {value: "Passing constraint instance in $this->createFormBuilder()",  correct: false}
+            - {value: "Invoke $formBuilder->setConstraints() method",               correct: false}
+            - {value: "Add an annotation in model",                                 correct: true}
+    -
+        question: 'Using form component, option "error_bubbling" will include error in current field.'
+        answers:
+            - {value: "True",  correct: false}
+            - {value: "False", correct: true}
+    -
+        question: 'How do you set default value?'
+        answers:
+            - {value: "$this->createFormBuilder($defaults)",                correct: true}
+            - {value: "$this->createFormBuilder(null, $defaults)",          correct: false}
+            - {value: "$this->createFormBuilder()->setDefaults($defaults)", correct: false}
+            - {value: "$this->createFormBuilder()->addDefaults($defaults)", correct: false}

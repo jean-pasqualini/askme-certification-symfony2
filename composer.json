@@ -1,0 +1,14 @@
+{
+  "name": "jean-pasqualini/askme-certification-symfony2",
+  "version": "1.0.0",
+  "description": "Différentes questions sur les sujets à réviser pour la certification symfony 2",
+  "keywords": ["askme-compose", "symfony2"],
+  "homepage": "https://github.com/onetest/askme-certification-symfony2",
+  "license": "GPL V2",
+  "authors": [
+    {
+      "name": "Jean Pasqualini",
+      "homepage": "https://github.com/onetest"
+    }
+  ]
+}

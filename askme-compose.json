@@ -1,0 +1,81 @@
+{
+  "category" :
+  {
+    "architecture" : {
+      "file" : "/category/architecture.yml",
+      "description" : "architecture"
+    },
+    "automated-tests" : {
+      "file" : "/category/automated-tests.yml",
+      "description" : "automated-tests"
+    },
+    "bundles" : {
+      "file" : "/category/bundles.yml",
+      "description" : "bundles"
+    },
+    "cache-http" : {
+      "file" : "/category/cache-http.yml",
+      "description" : "cache-http"
+    },
+    "command-lines" : {
+      "file" : "/category/command-lines.yml",
+      "description" : "command-lines"
+    },
+    "console" : {
+      "file" : "/category/console.yml",
+      "description" : "console"
+    },
+    "cordoval-batttery1" : {
+      "file" : "/category/cordoval-batttery1.yml",
+      "description" : "cordoval-batttery1"
+    },
+    "dependency-injection" : {
+      "file" : "/category/dependency-injection.yml",
+      "description" : "dependency-injection"
+    },
+    "doctrine" : {
+      "file" : "/category/doctrine.yml",
+      "description" : "doctrine"
+    },
+    "forms" : {
+      "file" : "/category/forms.yml",
+      "description" : "forms"
+    },
+    "http" : {
+      "file" : "/category/http.yml",
+      "description" : "http"
+    },
+    "misc" : {
+      "file" : "/category/misc.yml",
+      "description" : "misc"
+    },
+    "php" : {
+      "file" : "/category/php.yml",
+      "description" : "php"
+    },
+    "resources" : {
+      "file" : "/category/resources.yml",
+      "description" : "resources"
+    },
+    "routing" : {
+      "file" : "/category/routing.yml",
+      "description" : "routing"
+    },
+    "security" : {
+      "file" : "/category/security.yml",
+      "description" : "security"
+    },
+    "standardization" : {
+      "file" : "/category/standardization.yml",
+      "description" : "standardization"
+    },
+    "twig" : {
+      "file" : "/category/twig.yml",
+      "description" : "twig"
+    },
+    "validation" : {
+      "file" : "/category/validation.yml",
+      "description" : "validation"
+    }
+  }
+}
